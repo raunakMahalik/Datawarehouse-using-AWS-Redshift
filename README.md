@@ -332,7 +332,7 @@ Here is a screenshot of the output (with hidden sensetive details):
 
 **Good Practices:** 
 - AWS Redshift has an hourly usage cost hence to avoid unanticipated billings it is recommended to delete the Redshift cluster once it is not in use. To delete the cluster along with its IAM role and policies, run the **delete_resources.py** file by giving  the command : `python3 delete_resources.py`. The output should look like this:
-<div align="center"><img src="images/delete_output.PNG"></div>
+<div align="center"><img src="Images/delete_output.PNG"></div>
 - Never share the AWS Access key ID and the Secret access key with unauthorized personel or on public platforms.
 
 ## Example Queries/Output :
@@ -348,7 +348,7 @@ The following queries were run to view the tables:
 **Output:**
 
 <div align="center">
-<img src="images/songs.PNG">
+<img src="Images/songs.PNG">
 </div>
 
 
@@ -357,7 +357,7 @@ The following queries were run to view the tables:
 **Output:**
 
 <div align="center">
-<img src="images/artists.PNG">
+<img src="Images/artists.PNG">
 </div>
 
 
@@ -366,7 +366,7 @@ The following queries were run to view the tables:
 **Output:**
 
 <div align="center">
-<img src="images/time.PNG">
+<img src="Images/time.PNG">
 </div>
 
 
@@ -375,7 +375,7 @@ The following queries were run to view the tables:
 **Output:**
 
 <div align="center">
-<img src="images/users.PNG">
+<img src="Images/users.PNG">
 </div>
 
 
@@ -384,7 +384,7 @@ The following queries were run to view the tables:
 **Output:**
 
 <div align="center">
-<img src="images/songplays.PNG">
+<img src="Images/songplays.PNG">
 </div>
 
 
@@ -392,26 +392,26 @@ The following queries were run to view the tables:
 The following query was run to view the title and artists of the most frequently played songs:
 
 <div align="center">
-<img src="images/top_10_songs.png">
+<img src="Images/top_10_songs.png">
 </div>
 
 Here is the output:
 
 <div align="center">
-<img src="images/top_10_songs_output.png">
+<img src="Images/top_10_songs_output.png">
 </div>
 
 #### 3. Maximum traffic hours :
 The following query was run to view the hours which experience the most user traffic:
 
 <div align="center">
-<img src="images/heavy_traffic_hours.png">
+<img src="Images/heavy_traffic_hours.png">
 </div>
 
 Here is the output:
 
 <div align="center">
-<img src="images/heavy_traffic_hours_output.png">
+<img src="Images/heavy_traffic_hours_output.png">
 </div>
 
 Looks like the majority of user activity is observed between 4:00 PM and 6:00 PM.
