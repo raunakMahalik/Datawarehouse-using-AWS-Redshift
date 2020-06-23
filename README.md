@@ -325,7 +325,7 @@ To use the project the following steps must be performed:
 1.1 The cluster endpoint address and IAM role ARN details are printed in the output. Write these values to the `dwh.cfg file.`
 Here is a screenshot of the output (with hidden sensetive details):
 <div align="center">
-<img width="341" height="426" src="images/redshift_cluster_connect_output.PNG" alt=" Output">
+<img width="341" height="426" src="Images/redshift_cluster_connect_output.PNG" alt=" Output">
  </div>
 2. Run the **create_tables.py** file by using the command : `python3 create_tables.py`.
 3. Run the **etl.py** file by using the command : `python3 etl.py`
