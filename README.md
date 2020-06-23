@@ -343,45 +343,45 @@ To test the functionality data warehouse a lot of SQL queries were run in the Re
 
 The following queries were run to view the tables:
 
-- `SELECT * FROM  songs;`
+##### `SELECT * FROM  songs;`
 
-**Output:**
+Output:
 
 <div align="center">
 <img src="Images/songs.PNG">
 </div>
 
 
-- `SELECT * FROM artists;`
+##### `SELECT * FROM artists;`
 
-**Output:**
+Output:
 
 <div align="center">
 <img src="Images/artists.PNG">
 </div>
 
 
-- `SELECT * FROM  time;`
+##### `SELECT * FROM  time;`
 
-**Output:**
+Output:
 
 <div align="center">
 <img src="Images/time.PNG">
 </div>
 
 
-- `SELECT * FROM  users;`
+##### `SELECT * FROM  users;`
 
-**Output:**
+Output:
 
 <div align="center">
 <img src="Images/users.PNG">
 </div>
 
 
-- `SELECT * FROM  songplays;`
+##### `SELECT * FROM  songplays;`
 
-**Output:**
+Output:
 
 <div align="center">
 <img src="Images/songplays.PNG">
