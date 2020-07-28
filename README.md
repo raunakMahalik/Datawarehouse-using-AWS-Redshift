@@ -5,7 +5,7 @@
 
 The music streaming app start-up, Sparkify, has collected copious amount of song and user activity data. The data resides in S3 buckets as JSON logs of user activity along with JSON metadata of the songs in the app. The analytics team at Sparkify wants to use this data and deliver insights which can drive business decisions and improve user experience. To achieve this the data needs to be reorganised into a datawarehouse hosted on AWS Redshift. The aim of this project is to build an end to end big data eco system that supports this datawarehouse.
 
-The follwing are the sub-tasks of this project:
+The following are the sub-tasks of this project:
 - Build an ETL pipeline that extracts the raw data (around 400K records) from the S3 buckets.
 - Stage the data on Redshift clusters.
 - Transform it into a set of facts and dimension tables for quick analytics.
