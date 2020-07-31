@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The music streaming app start-up, Sparkify, has collected copious amount of song and user activity data. The data resides in S3 buckets as JSON logs of user activity along with JSON metadata of the songs in the app. The analytics team at Sparkify wants to use this data and deliver insights which can drive business decisions and improve user experience. To achieve this the data needs to be reorganised into a datawarehouse hosted on AWS Redshift. The aim of this project is to build an end to end big data eco system that supports this datawarehouse.
+The music streaming app start-up, Sparkify, has collected a copious amount of song and user activity data. The data resides in S3 buckets as JSON logs of user activity along with JSON metadata of the songs in the app. The analytics team at Sparkify wants to use this data and deliver insights that can drive business decisions and improve user experience. To achieve this the data needs to be reorganized into a data warehouse hosted on AWS Redshift. The aim of this project is to build an end to end big data ecosystem that supports this data warehouse.
 
 The following are the sub-tasks of this project:
 - Build an ETL pipeline that extracts the raw data (around 400K records) from the S3 buckets.
@@ -13,7 +13,7 @@ The following are the sub-tasks of this project:
 
 ## Database Schema
 
-The analytics team at Sparkify is interested in understanding what songs the users listen to frequently. Given this use case, a star schema implementation which is attuned to this requirement is implemented.
+The analytics team at Sparkify is interested in understanding what songs the users listen to frequently. Given this use case, a star schema implementation that is attuned to this requirement is implemented.
 
 A relational database model is ideal for this use case as:
 
@@ -176,19 +176,19 @@ Along with the logs and song data contained in the S3 bucket, the following file
 
 
 To use the project the following steps must be performed:
-1. Run the **create_redshift_cluster.py** file by using the command : `python3 create_redshift_cluster.py`.
+1. Run the **create_redshift_cluster.py** file by using the command: `python3 create_redshift_cluster.py`.
 1.1 The cluster endpoint address and IAM role ARN details are printed in the output. Write these values to the `dwh.cfg file.`
 Here is a screenshot of the output (with hidden sensetive details):
 <div align="center">
 <img width="341" height="426" src="Images/redshift_cluster_connect_output.PNG" alt=" Output">
  </div>
-2. Run the **create_tables.py** file by using the command : `python3 create_tables.py`.
-3. Run the **etl.py** file by using the command : `python3 etl.py`
+2. Run the **create_tables.py** file by using the command: `python3 create_tables.py`.
+3. Run the **etl.py** file by using the command: `python3 etl.py`
 
 **Good Practices:** 
-- AWS Redshift has an hourly usage cost hence to avoid unanticipated billings it is recommended to delete the Redshift cluster once it is not in use. To delete the cluster along with its IAM role and policies, run the **delete_resources.py** file by giving  the command : `python3 delete_resources.py`. The output should look like this:
+- AWS Redshift has an hourly usage cost hence to avoid unanticipated billings it is recommended to delete the Redshift cluster once it is not in use. To delete the cluster along with its IAM role and policies, run the **delete_resources.py** file by giving the command: `python3 delete_resources.py`. The output should look like this:
 <div align="center"><img src="Images/delete_output.PNG"></div>
-- Never share the AWS Access key ID and the Secret access key with unauthorized personel or on public platforms.
+- Never share the AWS Access Key ID and the Secret access key with unauthorized personnel or on public platforms.
 
 ## Example Queries/Output :
 
